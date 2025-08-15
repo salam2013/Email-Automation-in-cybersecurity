@@ -2,9 +2,9 @@
 
 ---
 
-# BNS Cybersecurity Automation Project – Automated Email Phishing Detector
+# Cybersecurity Automation Project – Automated Email Phishing Detector
 
-**Prepared by:** Salami Shuaib
+**Prepared by:** Salami Shuaib A. Cybersecurity Analyst
 **Date:** 10th August 2025
 
 ---
@@ -93,16 +93,95 @@ The output will be saved as a CSV file summarizing:
 
 ---
 
-## 📊 Sample Output
+
+
+## Automated Workflow Breakdown
+
+
+
+
+<img width="941" height="705" alt="Screenshot 2025-08-10 210721" src="https://github.com/user-attachments/assets/a661bb18-0f4d-4cc8-832a-2c0cd5f000c9" />
+
+
+
+
+
+
+### **Phase 1 – Email Collection & Secure Storage**  
+- Analyzed email messages in `.eml` format.  
+- Stored all collected emails in an isolated repository to preserve integrity and prevent tampering.  
+
+
+### **Phase 2 – Email Parsing & Data Structuring**  
+- Extracted critical components such as headers, body text, sender information, and attachments.  
+- Converted the extracted data into a structured format for automated scanning and analysis.  
+
+
+### **Phase 3 – Comprehensive Threat Analysis**  
+**Header & Spoofing Verification**  
+- Verified sender details.  
+- Flagged `Return-Path` and `Reply-To` mismatches as potential spoofing indicators.  
+
+**Link Assessment**  
+- Checked embedded URLs against live threat intelligence feeds to detect phishing or malicious links.  
+
+**Attachment Inspection**  
+- Extracted attachments and generated SHA-256 hashes.  
+- Queried VirusTotal for known malware signatures and suspicious activity.  
+
+
+### **Phase 4 – Threat Intelligence Correlation**  
+- Cross-referenced email threat indicators with known attack signatures using a Security Information and Event Management (SIEM) platform.  
+- Used real-time intelligence feeds to match URLs, file hashes, and email patterns with active cyber threat campaigns.  
+
+## Core Features Implemented  
+- **Attachment Extraction** – Identifies and extracts all non-empty attachments from suspicious emails.  
+- **SHA-256 Hashing** – Generates unique hashes for file verification and VirusTotal lookups.  
+- **VirusTotal Integration** – Retrieves malicious, suspicious, and harmless detection counts; flags unknown files for manual review.  
+- **Header Analysis** – Compares `From`, `Return-Path`, and `Reply-To` fields to detect spoofing attempts.  
+
+
+
+## Sample Output
 
 | From                                            | Return-Path                                     | Reply-To                                        | Verdict   | SHA-256 Hash | VT Malicious Count |
 | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- | --------- | ------------ | ------------------ |
 | [sender@example.com](mailto:sender@example.com) | [sender@example.com](mailto:sender@example.com) | [sender@example.com](mailto:sender@example.com) | SAFE      | abc123...    | 0                  |
 | [attacker@evil.com](mailto:attacker@evil.com)   | [hacker@evil.com](mailto:hacker@evil.com)       | [scam@evil.com](mailto:scam@evil.com)           | MALICIOUS | xyz456...    | 5                  |
 
+
+
+
+## Technologies & Tools  
+- **Python** – Email parsing, hashing, API integration  
+- **VirusTotal API** – Threat intelligence  
+- **python-dotenv** – Secure API key handling  
+- **Requests library** – HTTP API calls  
+- **CSV Reports** – Structured result storage
+
+
+<img width="1513" height="134" alt="Screenshot 2025-08-14 222656" src="https://github.com/user-attachments/assets/0975141b-3f1d-4d3d-b6e8-c33d3e754da2" />
+
+
+<img width="1406" height="308" alt="Screenshot 2025-08-14 222337" src="https://github.com/user-attachments/assets/942b9573-5c8e-4fe7-8bcc-856cdcebf360" />
+
+
+
+
+## CSV Report Summary  
+The CSV report contains:  
+- Email header details  
+- Mismatch flags  
+- Attachment details and SHA-256 hashes  
+- VirusTotal detection statistics
+
+
+<img width="1497" height="550" alt="Screenshot 2025-08-14 222425" src="https://github.com/user-attachments/assets/8b2f76d8-d2d7-4810-a708-cb98705247ef" />
+
+
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 * Implement **URL extraction and scanning** from email bodies
 * Integrate **ClamAV** for local attachment scanning
@@ -110,13 +189,16 @@ The output will be saved as a CSV file summarizing:
 * Enable **live IMAP monitoring** for continuous scanning
 * Add **machine learning** classification for phishing prediction
 
+
+
+
+## Conclusion  
+This project demonstrates how targeted automation can significantly improve phishing email and malware detection.  
+By integrating secure email collection, structured parsing, threat intelligence lookups, and SIEM correlation, it provides a scalable, efficient, and proactive threat detection framework.  
+
+
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License.
 
 ---
 
-If you’d like, I can now **insert this README.md directly into your extracted ZIP folder** so it’s ready for upload to GitHub.
-Do you want me to do that?
