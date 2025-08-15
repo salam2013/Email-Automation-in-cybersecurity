@@ -1,0 +1,4 @@
+filename,sender,to,subject,url,vt_result,verdict
+Task1.eml,project.lead@bnscyberlab.com,sales@bnscyberlab.com,Q3 Project Update and Deliverables,https://www.pmi.org/learning/library/project-update-report-best-practices-8322,"{'malicious': 0, 'suspicious': 0, 'undetected': 29, 'harmless': 68, 'timeout': 0}",CLEAN
+Task1.eml,project.lead@bnscyberlab.com,sales@bnscyberlab.com,Q3 Project Update and Deliverables,https://asana.com/resources/project-deliverables,"{'malicious': 0, 'suspicious': 0, 'undetected': 29, 'harmless': 68, 'timeout': 0}",CLEAN
+Task1.eml,project.lead@bnscyberlab.com,sales@bnscyberlab.com,Q3 Project Update and Deliverables,[Attachment: Q3_Project_Update.pdf],{'verdict': 'Not found in VirusTotal database'},UNKNOWN
