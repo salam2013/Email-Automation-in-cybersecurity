@@ -98,8 +98,6 @@ The output will be saved as a CSV file summarizing:
 ## Automated Workflow Breakdown
 
 
-
-
 <img width="941" height="705" alt="Screenshot 2025-08-10 210721" src="https://github.com/user-attachments/assets/a661bb18-0f4d-4cc8-832a-2c0cd5f000c9" />
 
 
@@ -158,13 +156,6 @@ The output will be saved as a CSV file summarizing:
 - **python-dotenv** – Secure API key handling  
 - **Requests library** – HTTP API calls  
 - **CSV Reports** – Structured result storage
-
-
-<img width="1513" height="134" alt="Screenshot 2025-08-14 222656" src="https://github.com/user-attachments/assets/0975141b-3f1d-4d3d-b6e8-c33d3e754da2" />
-
-
-<img width="1406" height="308" alt="Screenshot 2025-08-14 222337" src="https://github.com/user-attachments/assets/942b9573-5c8e-4fe7-8bcc-856cdcebf360" />
-
 
 
 
