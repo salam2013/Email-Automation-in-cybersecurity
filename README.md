@@ -176,6 +176,10 @@ The CSV report contains:
 - VirusTotal detection statistics
 
 
+<img width="1513" height="134" alt="image" src="https://github.com/user-attachments/assets/8fe4c236-785b-4f76-9651-34bf4253badf" />
+
+
+
 <img width="1497" height="550" alt="Screenshot 2025-08-14 222425" src="https://github.com/user-attachments/assets/8b2f76d8-d2d7-4810-a708-cb98705247ef" />
 
 
