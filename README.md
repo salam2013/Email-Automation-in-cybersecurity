@@ -177,10 +177,7 @@ The CSV report contains:
 ---
 
 ## Future Enhancements
-
-* Implement **URL extraction and scanning** from email bodies
 * Integrate **ClamAV** for local attachment scanning
-* Provide **JSON + CSV** outputs for SIEM ingestion
 * Enable **live IMAP monitoring** for continuous scanning
 * Add **machine learning** classification for phishing prediction
 
